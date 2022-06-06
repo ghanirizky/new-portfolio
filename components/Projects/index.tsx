@@ -10,7 +10,7 @@ const Projects = () => {
           <div className="row">
             <div className="col-lg-11 text-center mx-auto col-12">
               <div className="col-lg-8 mx-auto">
-                <h2>Things I have designed for digital media agencies</h2>
+                <h2>Things I have designed and made for my portfolio</h2>
               </div>
               <Carousel>
                 <div>
