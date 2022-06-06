@@ -1,12 +1,13 @@
 import React from "react";
 
+
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-sm navbar-light">
+      <nav className="navbar navbar-expand-sm navbar-light bg-light">
         <div className="container">
           <a className="navbar-brand" href="index.html">
-            <i className="uil uil-user" /> Marvel
+            <i className="uil uil-user" /> Ghani
           </a>
           <button
             className="navbar-toggler"

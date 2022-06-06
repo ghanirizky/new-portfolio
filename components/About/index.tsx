@@ -1,3 +1,6 @@
+import { UilLinkedin, UilGithub  } from '@iconscout/react-unicons'
+import Image from "next/image";
+
 const About = () => {
   return (
     <>
@@ -22,29 +25,29 @@ const About = () => {
                   </div>
                 </h1>
                 <p>
-                  Building a successful product is a challenge. I am highly
-                  energetic in user experience design, interfaces and web
-                  development.
+                  {`I adore coding and developing new things and `} 
+                  {`I'm skilled at working with people and am a laid-back individual that is enjoyable to work with.`}
                 </p>
                 <div className="custom-btn-group mt-4">
-                  <a href="#" className="btn mr-lg-2 custom-btn">
+                  <a href="/files/CV_ATS_Ghani.pdf" target="_blank" rel="noreferrer" className="btn mr-lg-2 custom-btn">
                     <i className="uil uil-file-alt" /> Download Resume
                   </a>
-                  <a
-                    href="#contact"
-                    className="btn custom-btn custom-btn-bg custom-btn-link"
-                  >
-                    Get a free quote
+                  <a href="https://www.linkedin.com/in/ghani-rizkyy/" target="_blank" rel="noreferrer" className="btn mr-lg-2 custom-btn">
+                    <UilLinkedin size="15" className="mb-1" /> LinkedIn
+                  </a>
+                  <a href="https://github.com/ghanirizky" target="_blank" rel="noreferrer" className="btn mr-lg-2 custom-btn">
+                    <UilGithub size="15" className="mb-1"/> Github
                   </a>
                 </div>
               </div>
             </div>
             <div className="col-lg-5 col-md-12 col-12">
               <div className="about-image svg">
-                <img
-                  src="images/undraw/undraw_software_engineer_lvl5.svg"
+                <Image
+                  src="/images/undraw/undraw_software_engineer_lvl5.svg"
                   className="img-fluid"
                   alt="svg image"
+                  layout='fill'
                 />
               </div>
             </div>
