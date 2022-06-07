@@ -21,6 +21,10 @@ const Projects = () => {
     {
       title : "Gamefeed Discord Bot",
       url : "logo-discord.png"
+    },
+    {
+      title : "Check other on my Github",
+      url : "logo-github.jpg"
     }
   ];
 
@@ -45,7 +49,7 @@ const Projects = () => {
                       key={`${e.title}-${e.url}`}
                       className="img-project"
                     >
-                      <p>{e.title}</p>
+                      <p className="mx-auto my-3 font-weight-bold">{e.title}</p>
                       <hr />
                       <Image
                         src={`/images/project/${e.url}`}
