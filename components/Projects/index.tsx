@@ -8,7 +8,7 @@ import {
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import myProjects from "../../public/files/project_features.json";
-import Link from "next/link";
+import { UilExternalLinkAlt } from "@iconscout/react-unicons";
 
 // Import Swiper styles
 import "swiper/css";
@@ -62,18 +62,27 @@ const Projects = () => {
                   return (
                     <SwiperSlide
                       key={`${e.title}-${e.image}`}
-                      className="img-project"
+                      className="slider__container"
                     >
-                      <p className="mx-auto my-3 font-weight-bold">{e.title}</p>
-                      <hr />
-                      <a href={e.url} target="_blank" rel="noreferrer">
+                      <p className="mx-auto font-weight-bold">{e.title}</p>
+                      <div className="container__image">
                         <Image
+                          className="image__project"
                           src={`/images/project/${e.image}`}
                           width={WIDTH}
                           height={HEIGHT}
                           alt="image"
                         />
-                      </a>
+                        <a href={e.url} target="_blank" rel="noreferrer">
+                          <div className="middle">
+                            <div className="text">
+                              See More <UilExternalLinkAlt size="15" className="mx-auto mb-1" />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      {/* </a> */}
                     </SwiperSlide>
                   );
                 })}
