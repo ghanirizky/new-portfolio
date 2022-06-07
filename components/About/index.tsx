@@ -40,7 +40,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 col-12">
+            <div className="col-lg-5 col-md-12 col-12 mt-5">
               <div className="about-image svg">
                 <Image
                   src="/images/undraw/undraw_software_engineer_lvl5.svg"

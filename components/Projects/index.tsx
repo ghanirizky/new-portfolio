@@ -31,9 +31,13 @@ const Projects = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-11 text-center mx-auto col-12">
-              <div className="col-lg-8 mx-auto mb-5">
-                <h2>Things I have designed and made for my portfolio</h2>
-              </div>
+              <u>
+                {" "}
+                <h2 className="">
+                  Things I have designed and made so far...
+                </h2>
+              </u>
+              <div className="col-lg-8 mx-auto mb-5"></div>
               <Swiper
                 effect={"coverflow"}
                 grabCursor={true}
@@ -76,7 +80,11 @@ const Projects = () => {
                         <a href={e.url} target="_blank" rel="noreferrer">
                           <div className="middle">
                             <div className="text">
-                              See More <UilExternalLinkAlt size="15" className="mx-auto mb-1" />
+                              See More{" "}
+                              <UilExternalLinkAlt
+                                size="15"
+                                className="mx-auto mb-1"
+                              />
                             </div>
                           </div>
                         </a>
