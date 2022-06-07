@@ -1,0 +1,22 @@
+[
+  {
+    "title": "StoreGG",
+    "image": "storegg.png",
+    "url" : "https://storegg-shop.vercel.app/"
+  },
+  {
+    "title": "StoreGG-CMS",
+    "image": "storegg-cms.png",
+    "url" : "https://be-storegg-server.herokuapp.com/"
+  },
+  {
+    "title": "Gamefeed Discord Bot",
+    "image": "logo-discord.png",
+    "url" : "https://github.com/ghanirizky/gamefeed-nodejs-ts"
+  },
+  {
+    "title": "Check other on my Github",
+    "image": "logo-github.jpg",
+    "url" : "https://github.com/ghanirizky"
+  }
+]
