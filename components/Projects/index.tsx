@@ -27,15 +27,12 @@ const Projects = () => {
 
   return (
     <>
-      <section className="project py-5" id="project">
+      <section className="project py-auto px-auto" id="project">
         <div className="container">
           <div className="row">
             <div className="col-lg-11 text-center mx-auto col-12">
               <u>
-                {" "}
-                <h2 className="">
-                  Things I have designed and made so far...
-                </h2>
+                <h2>Portfolio</h2>
               </u>
               <div className="col-lg-8 mx-auto mb-5"></div>
               <Swiper
@@ -66,7 +63,7 @@ const Projects = () => {
                   return (
                     <SwiperSlide
                       key={`${e.title}-${e.image}`}
-                      className="slider__container"
+                      className="border border-dark rounded mb-5"
                     >
                       <p className="mx-auto font-weight-bold">{e.title}</p>
                       <div className="container__image">
