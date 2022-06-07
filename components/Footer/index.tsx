@@ -1,16 +1,21 @@
 import React from "react";
+import IconItem from "./IconItem";
+import footerIconData from "../../public/files/footer_icon.json";
 
 const Footer = () => {
   return (
-    <footer className="footer py-5">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12 col-12">
-            <p className="copyright-text text-center">
-            </p>
-          </div>
-        </div>
-      </div>
+    <footer className="d-flex justify-content-center ">
+      {footerIconData.map((e) => {
+        return (
+          <IconItem
+            key={e.name}
+            name={e.name}
+            bgcolor={e.bgcolor}
+            icon={e.icon}
+            url={e.url}
+          />
+        );
+      })}
     </footer>
   );
 };
