@@ -16,5 +16,7 @@ a {
 }
 
 .img-project {
-  border: 5px solid rgb(0, 0, 0);
+  border:1px solid #021a40;
+  padding:1px;
+
 }

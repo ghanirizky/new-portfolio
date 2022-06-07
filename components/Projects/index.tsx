@@ -6,8 +6,8 @@ import "swiper/css";
 import Image from "next/image";
 
 const Projects = () => {
-  const WIDTH = 1200;
-  const HEIGHT = 600;
+  const WIDTH = 1000;
+  const HEIGHT = 500;
 
   const arrImage = [
     {
@@ -17,10 +17,6 @@ const Projects = () => {
     {
       title: "StoreGG-CMS",
       url: "storegg-cms.png",
-    },
-    {
-      title : "ReTech",
-      url : "logo-retech.png"
     },
     {
       title : "Gamefeed Discord Bot",
@@ -39,7 +35,7 @@ const Projects = () => {
               </div>
               <Swiper
                 spaceBetween={50}
-                slidesPerView={1}
+                slidesPerView={2}
                 onSlideChange={() => console.log("slide change")}
                 onSwiper={(swiper) => console.log(swiper)}
               >
