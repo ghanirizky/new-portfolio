@@ -12,10 +12,9 @@ const About = () => {
           <div className="row">
             <div className="col-lg-7 col-md-12 col-12 d-flex align-items-center">
               <div className="about-text">
-                <small className="small-text">
-                  Welcome to{" "}
-                  <span className="mobile-block">my portfolio website!</span>
-                </small>
+                <p>
+                  <span className="mobile-block">Welcome to my website!</span>
+                </p>
                 <h1 className="animated animated-text">
                   <span className="mr-2">Hi, Im</span>
                   <div className="animated-info">

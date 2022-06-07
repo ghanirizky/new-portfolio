@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-css-tags */
 import type { NextPage } from "next";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import Navbar from '../components/Navbar'
 import About from "../components/About";

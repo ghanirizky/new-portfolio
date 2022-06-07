@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.img-project {
+  border: 5px solid rgb(0, 0, 0);
+}
