@@ -55,3 +55,17 @@ a {
   font-size: 16px;
   padding: 10px 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 11px;
+  }
+
+  .project__title {
+    font-size: 0.8rem;
+  }
+
+  .middle {
+    width: 150px;
+  }
+}
