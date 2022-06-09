@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Navbar = () => {
   return (
     <>
@@ -17,8 +16,7 @@ const Navbar = () => {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          >
-          </button>
+          ></button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">

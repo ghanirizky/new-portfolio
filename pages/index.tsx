@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Projects from "../components/Projects";
-import Features from "../components/Features";
+import Features from "../components/Resume";
 import Footer from "../components/Footer";
 import Contacts from "../components/Contacts";
 
