@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-sm navbar-light bg-light">
         <div className="container">
-          <a className="navbar-brand" href="index.html">
+          <a className="navbar-brand" href="#">
             <i className="uil uil-user" /> Ghani
           </a>
           <button
