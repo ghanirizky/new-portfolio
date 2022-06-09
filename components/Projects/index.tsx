@@ -33,7 +33,7 @@ const useMediaQuery = (width: any) => {
     }
 
     return () => media.removeEventListener("change", (e) => updateTarget(e));
-  }, []);
+  }, [updateTarget, width]);
 
   return targetReached;
 };
