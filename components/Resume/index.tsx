@@ -2,10 +2,9 @@ import React from "react";
 import Experiences from "./Experiences";
 import Educations from "./Educations";
 
-const Features = () => {
+const Resume = () => {
   return (
     <>
-      {/* FEATURES */}
       <section
         className="resume py-5 d-lg-flex justify-content-center align-items-center"
         id="resume"
@@ -21,4 +20,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Resume;

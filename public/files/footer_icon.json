@@ -1,9 +1,9 @@
 [
   {
-    "name": "ghani.rizkymail@gmail.com",
+    "name": "Mail me",
     "bgcolor": "#dd4b39",
     "icon": "fab fa-google",
-    "url": "mailto:ghani.rizkymail@gmail.com"
+    "url": "mailto:ghani.rizkymail@gmail.com?subject=Hi Ghani!&body = Hallo Ghani, Nice to meet you!"
   },
   {
     "name": "LinkedIn",

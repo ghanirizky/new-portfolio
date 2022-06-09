@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Projects from "../components/Projects";
-import Features from "../components/Resume";
+import Resume from "../components/Resume";
 import Footer from "../components/Footer";
 import Contacts from "../components/Contacts";
 
@@ -22,9 +22,8 @@ const Home: NextPage = () => {
       <hr />
       <Projects />
       <hr />
-      <Features />
+      <Resume />
       <hr />
-      {/* <Contacts /> */}
       <Footer />
     </>
   );
