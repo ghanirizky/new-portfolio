@@ -4,7 +4,7 @@ import footerIconData from "../../public/files/footer_icon.json";
 
 const Footer = () => {
   return (
-    <footer className="d-flex justify-content-center ">
+    <footer className="d-flex flex-column flex-sm-row  justify-content-center ">
       {footerIconData.map((e) => {
         return (
           <IconItem

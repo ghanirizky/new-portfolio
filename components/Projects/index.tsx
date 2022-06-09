@@ -1,11 +1,5 @@
-import React from "react";
-import {
-  Pagination,
-  Scrollbar,
-  A11y,
-  EffectCoverflow,
-  Navigation,
-} from "swiper";
+import React, { useState, useCallback, useEffect } from "react";
+import { Pagination, Scrollbar, A11y, EffectCoverflow } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import myProjects from "../../public/files/project_features.json";
 import { UilExternalLinkAlt } from "@iconscout/react-unicons";
@@ -13,16 +7,42 @@ import { UilExternalLinkAlt } from "@iconscout/react-unicons";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import "swiper/css/scrollbar";
 
 import Image from "next/image";
 
+const useMediaQuery = (width: any) => {
+  const [targetReached, setTargetReached] = useState(false);
+
+  const updateTarget = useCallback((e: any) => {
+    if (e.matches) {
+      setTargetReached(true);
+    } else {
+      setTargetReached(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    const media = window.matchMedia(`(max-width: ${width}px)`);
+    media.addEventListener("change", (e) => updateTarget(e));
+
+    // Check on mount (callback is not called until a change occurs)
+    if (media.matches) {
+      setTargetReached(true);
+    }
+
+    return () => media.removeEventListener("change", (e) => updateTarget(e));
+  }, []);
+
+  return targetReached;
+};
+
 const Projects = () => {
   const WIDTH = 1200;
   const HEIGHT = 600;
 
+  const isBreakpoint = useMediaQuery(768);
   const projectData = myProjects;
 
   return (
@@ -39,15 +59,9 @@ const Projects = () => {
                 effect={"coverflow"}
                 grabCursor={true}
                 centeredSlides={true}
-                modules={[
-                  Pagination,
-                  Scrollbar,
-                  A11y,
-                  EffectCoverflow,
-                  Navigation,
-                ]}
+                modules={[Pagination, Scrollbar, A11y, EffectCoverflow]}
                 spaceBetween={50}
-                slidesPerView={2}
+                slidesPerView={isBreakpoint ? 1 : 2}
                 coverflowEffect={{
                   rotate: 50,
                   stretch: 0,
@@ -55,9 +69,8 @@ const Projects = () => {
                   modifier: 1,
                   slideShadows: true,
                 }}
-                navigation={{ hideOnClick: true }}
                 scrollbar={{ draggable: true }}
-                pagination={{ type: "fraction" }}
+                pagination={{ type: "bullets", clickable: true }}
               >
                 {projectData.map((e) => {
                   return (
@@ -65,7 +78,9 @@ const Projects = () => {
                       key={`${e.title}-${e.image}`}
                       className="border border-dark rounded mb-5"
                     >
-                      <p className="mx-auto font-weight-bold">{e.title}</p>
+                      <p className="mx-auto font-weight-bold project__title">
+                        {e.title}
+                      </p>
                       <div className="container__image">
                         <Image
                           className="image__project"
@@ -86,8 +101,6 @@ const Projects = () => {
                           </div>
                         </a>
                       </div>
-
-                      {/* </a> */}
                     </SwiperSlide>
                   );
                 })}
