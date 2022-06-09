@@ -14,18 +14,21 @@ const Educations = () => {
             desc={
               "Master Track of Computer Science at Bina Nusantara University. Cumulative GPA: 3.66/4.0 (Until Semester 6 / S1)"
             }
+            url={"https://binus.ac.id/"}
           />
           <TimelineItem
             year={"2015"}
             title="High School"
             subTitle={"Science"}
             desc={"SMA Negeri 2 Bogor"}
+            url={"https://sman2kotabogor.sch.id/"}
           />
           <TimelineItem
             year={"2012"}
             title="Junior High School"
             subTitle={"Master Degree"}
             desc={"SMP Negeri 5 Bogor"}
+            url={"http://smpn5-bogor.sch.id/"}
           />
         </div>
       </div>
