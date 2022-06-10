@@ -27,10 +27,6 @@ const Certificate = () => {
               <Swiper
                 effect={"cube"}
                 grabCursor={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
                 cubeEffect={{
                   shadow: true,
                   slideShadows: true,
