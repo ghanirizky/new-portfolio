@@ -31,7 +31,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a href="#certificate" className="nav-link">
-                  <span data-hover="Projects">Certificate</span>
+                  <span data-hover="Certificate">Certificate</span>
                 </a>
               </li>
               <li className="nav-item">
