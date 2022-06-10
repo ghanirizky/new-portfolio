@@ -13,7 +13,7 @@ const IconItem = (props: IconItemProps) => {
   return (
     <>
       <a
-        className="btn btn-primary my-2 mx-2"
+        className="btn btn-primary border mb-3 mx-2"
         style={{ backgroundColor: `${bgcolor}` }}
         href={url}
         role="button"
