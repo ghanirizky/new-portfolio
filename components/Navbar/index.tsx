@@ -30,6 +30,11 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
+                <a href="#certificate" className="nav-link">
+                  <span data-hover="Projects">Certificate</span>
+                </a>
+              </li>
+              <li className="nav-item">
                 <a href="#resume" className="nav-link">
                   <span data-hover="Resume">Resume</span>
                 </a>

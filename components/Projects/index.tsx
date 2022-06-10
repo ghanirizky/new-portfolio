@@ -11,6 +11,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/scrollbar";
 
 import Image from "next/image";
+import SeeMoreButton from "./SeeMoreButton";
 
 const useMediaQuery = (width: any) => {
   const [targetReached, setTargetReached] = useState(false);
@@ -50,11 +51,9 @@ const Projects = () => {
       <section className="project py-auto px-auto" id="project">
         <div className="container">
           <div className="row">
-            <div className="col-lg-11 text-center mx-auto col-12">
-              <u>
-                <h2>Portfolio</h2>
-              </u>
-              <div className="col-lg-8 mx-auto mb-5"></div>
+            <div className="col-lg-12 text-center mx-auto col-12">
+              <h2>Portfolio</h2>
+              <div className="col-lg-8 mx-auto mb-4"></div>
               <Swiper
                 effect={"coverflow"}
                 grabCursor={true}
@@ -80,6 +79,7 @@ const Projects = () => {
                     >
                       <p className="mx-auto font-weight-bold project__title">
                         {e.title}
+                        <hr className="border border-dark mt-0 mx-auto"/>
                       </p>
                       <div className="container__image">
                         <Image
@@ -89,17 +89,7 @@ const Projects = () => {
                           height={HEIGHT}
                           alt="image"
                         />
-                        <a href={e.url} target="_blank" rel="noreferrer">
-                          <div className="middle">
-                            <div className="text">
-                              See More{" "}
-                              <UilExternalLinkAlt
-                                size="15"
-                                className="mx-auto mb-1"
-                              />
-                            </div>
-                          </div>
-                        </a>
+                        <SeeMoreButton url={e.url} />
                       </div>
                     </SwiperSlide>
                   );

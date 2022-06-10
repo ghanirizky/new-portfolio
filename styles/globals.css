@@ -69,6 +69,11 @@ a {
   font-size: 2rem;
 }
 
+.swipper__width{
+  width: 600px;
+  height: 400px;
+}
+
 @media screen and (max-width: 768px) {
   .text {
     font-size: 11px;

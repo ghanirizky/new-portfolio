@@ -1,0 +1,27 @@
+[
+  {
+    "title": "StoreGG",
+    "image": "mern-bwa.jpg",
+    "priority": 1
+  },
+  {
+    "title": "StoreGG-CMS",
+    "image": "agile-coursera.jpg",
+    "priority": 2
+  },
+  {
+    "title": "Gamefeed Discord Bot",
+    "image": "sql-sololearn.jpg",
+    "priority": 3
+  },
+  {
+    "title": "Check other on my Github",
+    "image": "git-progate.jpg",
+    "priority": 4
+  },
+  {
+    "title": "Check other on my Github",
+    "image": "cimb-niaga.jpg",
+    "priority": 5
+  }
+]
