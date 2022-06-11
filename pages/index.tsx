@@ -23,6 +23,8 @@ const Home: NextPage = () => {
       <hr />
       <Resume />
       <hr />
+      <Contacts />
+      <hr />
       <Footer />
     </>
   );
