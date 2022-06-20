@@ -12,42 +12,23 @@ import "swiper/css/scrollbar";
 
 import Image from "next/image";
 import SeeMoreButton from "./SeeMoreButton";
+import { useMediaQuery } from "../../helpers/useMediaQuery";
+import AboveDiv from "../Atom/AboveDiv"
 
-const useMediaQuery = (width: any) => {
-  const [targetReached, setTargetReached] = useState(false);
+interface ProjectsProp{
+  isBreakPoint : boolean
+}
 
-  const updateTarget = useCallback((e: any) => {
-    if (e.matches) {
-      setTargetReached(true);
-    } else {
-      setTargetReached(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    const media = window.matchMedia(`(max-width: ${width}px)`);
-    media.addEventListener("change", (e) => updateTarget(e));
-
-    // Check on mount (callback is not called until a change occurs)
-    if (media.matches) {
-      setTargetReached(true);
-    }
-
-    return () => media.removeEventListener("change", (e) => updateTarget(e));
-  }, [updateTarget, width]);
-
-  return targetReached;
-};
-
-const Projects = () => {
+const Projects = (props: ProjectsProp) => {
   const WIDTH = 1200;
   const HEIGHT = 600;
 
-  const isBreakpoint = useMediaQuery(768);
+  const {isBreakPoint} = props
   const projectData = myProjects;
 
   return (
     <>
+    <AboveDiv isBreakPoint = {isBreakPoint} classView = "above-project"/>
       <section className="project py-auto px-auto" id="project">
         <div className="container">
           <div className="row">
@@ -60,7 +41,7 @@ const Projects = () => {
                 centeredSlides={true}
                 modules={[Pagination, Scrollbar, A11y, EffectCoverflow]}
                 spaceBetween={50}
-                slidesPerView={isBreakpoint ? 1 : 2}
+                slidesPerView={isBreakPoint ? 1 : 2}
                 coverflowEffect={{
                   rotate: 50,
                   stretch: 0,

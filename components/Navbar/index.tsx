@@ -1,6 +1,13 @@
 import React from "react";
+import { useMediaQuery } from "../../helpers/useMediaQuery";
 
-const Navbar = () => {
+interface NavbarProps{
+  isBreakPoint: boolean
+}
+
+const Navbar = (props: NavbarProps) => {
+  const {isBreakPoint} = props
+  
   return (
     <>
       <nav className="navbar navbar-expand-sm navbar-light bg-light">
@@ -25,17 +32,17 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#project" className="nav-link">
+                <a href="#above-project" className="nav-link">
                   <span data-hover="Projects">Projects</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#certificate" className="nav-link">
+                <a href="#above-certificate" className="nav-link">
                   <span data-hover="Certificate">Certificate</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#resume" className="nav-link">
+                <a href="#above-resume" className="nav-link">
                   <span data-hover="Resume">Resume</span>
                 </a>
               </li>

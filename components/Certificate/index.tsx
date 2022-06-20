@@ -9,15 +9,24 @@ import "swiper/css/pagination";
 import { EffectCube, Pagination } from "swiper";
 
 import Image from "next/image";
+import { useMediaQuery } from "../../helpers/useMediaQuery";
+import AboveDiv from "../Atom/AboveDiv"
 
-const Certificate = () => {
+interface CertificateProp{
+  isBreakPoint: boolean
+}
+
+
+const Certificate = (props: CertificateProp) => {
   const WIDTH = 1200;
   const HEIGHT = 700;
 
+  const {isBreakPoint} = props
   let certificateData = myCertificate;
 
   return (
     <>
+    <AboveDiv isBreakPoint = {isBreakPoint} classView = "above-certificate"/>
       <section className="project py-auto px-auto" id="certificate">
         <div className="container">
           <div className="row">
