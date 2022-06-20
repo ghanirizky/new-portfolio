@@ -9,19 +9,21 @@ import Footer from "../components/Footer";
 import Contacts from "../components/Contacts";
 import Meta from "../components/Meta";
 import Certificate from "../components/Certificate";
+import { useMediaQuery } from "../helpers/useMediaQuery";
 
 const Home: NextPage = () => {
+  const isBreakpoint = useMediaQuery(768);
   return (
     <>
       <Meta />
-      <Navbar />
+      <Navbar isBreakPoint = {isBreakpoint}/>
       <About />
       <hr />
-      <Projects />
+      <Projects isBreakPoint = {isBreakpoint}/>
       <hr />
-      <Certificate />
+      <Certificate isBreakPoint = {isBreakpoint}/>
       <hr />
-      <Resume />
+      <Resume isBreakPoint = {isBreakpoint}/>
       <hr />
       <Contacts />
       <hr />
