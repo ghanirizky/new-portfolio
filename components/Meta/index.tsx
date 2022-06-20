@@ -5,7 +5,7 @@ const Meta = () => {
   return (
     <>
       <Head>
-        <title>Ghani RN - My Portfolio</title>
+        <title>Ghani Rizky Naufal</title>
         <meta name="title" content="Ghani RN - My Portfolio" />
         <meta
           name="description"
@@ -13,7 +13,7 @@ const Meta = () => {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://www.ghanirizky.com/" />
         <meta property="og:title" content="Ghani RN - My Portfolio" />
         <meta
           property="og:description"
@@ -25,7 +25,7 @@ const Meta = () => {
         />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="https://www.ghanirizky.com/" />
         <meta property="twitter:title" content="Ghani RN - My Portfolio" />
         <meta
           property="twitter:description"
