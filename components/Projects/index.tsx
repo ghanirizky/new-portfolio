@@ -60,8 +60,8 @@ const Projects = (props: ProjectsProp) => {
                     >
                       <p className="mx-auto font-weight-bold project__title">
                         {e.title}
-                        <hr className="border border-dark mt-0 mx-auto"/>
                       </p>
+                      <hr className="border border-dark mt-0 mx-auto"/>
                       <div className="container__image">
                         <Image
                           className="image__project"

@@ -1,12 +1,6 @@
 import React from "react";
-import { useMediaQuery } from "../../helpers/useMediaQuery";
 
-interface NavbarProps{
-  isBreakPoint: boolean
-}
-
-const Navbar = (props: NavbarProps) => {
-  const {isBreakPoint} = props
+const Navbar = () => {
   
   return (
     <>

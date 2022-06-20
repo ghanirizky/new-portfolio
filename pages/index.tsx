@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Meta />
-      <Navbar isBreakPoint = {isBreakpoint}/>
+      <Navbar/>
       <About />
       <hr />
       <Projects isBreakPoint = {isBreakpoint}/>
