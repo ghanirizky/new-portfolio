@@ -1,8 +1,6 @@
 import { UilLinkedin, UilGithub } from "@iconscout/react-unicons";
 import Image from "next/image";
 
-
-
 const About = () => {
   return (
     <>
@@ -29,7 +27,7 @@ const About = () => {
                   {`I adore coding and developing new things and `}
                   {`I'm skilled at working with people and am a laid-back individual that is enjoyable to work with.`}
                 </p>
-                <div className="custom-btn-group mt-4">
+                <div className="custom-btn-group">
                   <a
                     href="/files/CV_ATS_Ghani.pdf"
                     target="_blank"
@@ -57,13 +55,15 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 col-12 mt-5">
+            <div className="col-lg-5 col-md-12 col-12">
               <div className="about-image svg">
                 <Image
                   src="/images/undraw/undraw_profile_re_4a55.svg"
                   className="img-fluid"
                   alt="svg image"
-                  layout="fill"
+                  layout="responsive"
+                  width={250}
+                  height={250}
                 />
               </div>
             </div>
