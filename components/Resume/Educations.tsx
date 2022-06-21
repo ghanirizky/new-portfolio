@@ -26,9 +26,8 @@ const Educations = () => {
           <TimelineItem
             year={"2012"}
             title="Junior High School"
-            subTitle={"Master Degree"}
             desc={"SMP Negeri 5 Bogor"}
-            url={"http://smpn5-bogor.sch.id/"}
+            url={"https://www.instagram.com/smpn_5_bogor/"}
           />
         </div>
       </div>
