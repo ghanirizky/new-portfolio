@@ -1,5 +1,10 @@
 [
   {
+    "title": "Homjuice",
+    "image": "homjuice.webp",
+    "url" : "https://homjuice.co.id"
+  },
+  {
     "title": "StoreGG",
     "image": "storegg.png",
     "url" : "https://storegg-shop.vercel.app/"
@@ -7,7 +12,7 @@
   {
     "title": "StoreGG-CMS",
     "image": "storegg-cms.png",
-    "url" : "https://be-storegg-server.herokuapp.com/"
+    "url" : "https://be-store-gg.up.railway.app"
   },
   {
     "title": "Gamefeed Discord Bot",
