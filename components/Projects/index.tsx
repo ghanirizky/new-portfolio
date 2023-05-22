@@ -36,7 +36,6 @@ const Projects = (props: ProjectsProp) => {
               <h2>Portfolio</h2>
               <div className="col-lg-8 mx-auto mb-4"></div>
               <Swiper
-                effect={"coverflow"}
                 grabCursor={true}
                 centeredSlides={true}
                 modules={[Pagination, Scrollbar, A11y, EffectCoverflow]}
@@ -49,7 +48,6 @@ const Projects = (props: ProjectsProp) => {
                   modifier: 1,
                   slideShadows: true,
                 }}
-                scrollbar={{ draggable: true }}
                 pagination={{ type: "bullets", clickable: true }}
               >
                 {projectData.map((e) => {
@@ -58,10 +56,9 @@ const Projects = (props: ProjectsProp) => {
                       key={`${e.title}-${e.image}`}
                       className="border border-dark rounded mb-5"
                     >
-                      <p className="mx-auto font-weight-bold project__title">
+                      <p className="font-weight-bold project__title my-auto">
                         {e.title}
                       </p>
-                      <hr className="border border-dark mt-0 mx-auto"/>
                       <div className="container__image">
                         <Image
                           className="image__project"

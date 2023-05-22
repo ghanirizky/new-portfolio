@@ -12,7 +12,7 @@ const SeeMoreButton = (props: SeeMoreButtonProps) => {
     <a href={url} target="_blank" rel="noreferrer">
       <div className="middle">
         <div className="text">
-          See More <UilExternalLinkAlt size="15" className="mx-auto mb-1" />
+          See More <UilExternalLinkAlt size="15" className="" />
         </div>
       </div>
     </a>

@@ -16,11 +16,5 @@
     "bgcolor": "#333333",
     "icon": "fab fa-github",
     "url": "https://github.com/ghanirizky"
-  },
-  {
-    "name": "WhatsApp",
-    "bgcolor": "#25d366",
-    "icon": "fab fa-whatsapp",
-    "url": "https://wa.me/6281290639344"
   }
 ]

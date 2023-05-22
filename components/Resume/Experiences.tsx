@@ -8,7 +8,7 @@ const Experiences = () => {
         <h2 className="mb-4">Experiences</h2>
         <div className="timeline">
           <TimelineItem
-            year={"2022"}
+            year={"Present"}
             title="Full-Stack Engineer"
             subTitle={"Segari"}
             desc={`Stack: Java Spring Boot, ReactJS, Flutter-Dart. Encoding project requirements by converting workflow information into computer language on internal apps`}
@@ -18,7 +18,7 @@ const Experiences = () => {
             year={"2021"}
             title="Programmer Intern"
             subTitle={"PROSIA"}
-            desc={`Stack: NodeJS, ReactJ. Making REST API Back-End for Indonesia trading application called "INATRADE" using Node.js with ExpressJS framework`}
+            desc={`Stack: NodeJS, ReactJS. Making REST API Back-End for Indonesia trading application called "INATRADE" using ReactJS and Node.js with ExpressJS framework`}
             url={"https://prosia.co.id/"}
           />
         </div>

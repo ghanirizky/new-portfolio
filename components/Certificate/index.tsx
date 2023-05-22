@@ -32,7 +32,7 @@ const Certificate = (props: CertificateProp) => {
           <div className="row">
             <div className="col-lg-8 text-center mx-auto col-12">
               <h2>Certificate</h2>
-              <div className="col-lg-8 mx-auto mb-4"></div>
+              <div className="col-lg-8 my-auto mx-auto"></div>
               <Swiper
                 effect={"cube"}
                 grabCursor={true}
@@ -42,9 +42,8 @@ const Certificate = (props: CertificateProp) => {
                   shadowOffset: 20,
                   shadowScale: 0.94,
                 }}
-                pagination={true}
                 modules={[EffectCube, Pagination]}
-                className="mySwiper"
+                className="mySwiper mb-5"
               >
                 {certificateData.map((e) => {
                   return (
